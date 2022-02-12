@@ -5,34 +5,38 @@ using UnityEngine;
 public class PlayerBodyMove : MonoBehaviour
 {
     public float speed=1;
+    Rigidbody body;
     // Start is called before the first frame update
     void Start()
     {
-        
+        body = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
     void Update()
     {
+
         if (Input.GetKey(KeyCode.W))
         {
-            
-            transform.position = transform.position + speed*transform.forward;
+            body.AddForce(transform.forward * speed);
         }
         if (Input.GetKey(KeyCode.S))
         {
-
-            transform.position = transform.position - speed * transform.forward;
+            body.AddForce(-transform.forward * speed);
         }
         if (Input.GetKey(KeyCode.D))
         {
-
-            transform.position = transform.position + speed * transform.right;
+            body.AddForce(transform.right * speed);
         }
         if (Input.GetKey(KeyCode.A))
         {
-
-            transform.position = transform.position - speed * transform.right;
+            body.AddForce(-transform.right * speed);
         }
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            body.AddForce(transform.up * speed*200);
+        }
+
+
     }
 }
