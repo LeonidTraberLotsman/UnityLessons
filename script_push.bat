@@ -1,2 +1,3 @@
-git push
-git log
+git reset --hard
+git pull
+pause
