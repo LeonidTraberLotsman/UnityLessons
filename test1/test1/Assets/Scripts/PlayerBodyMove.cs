@@ -34,9 +34,12 @@ public class PlayerBodyMove : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            body.AddForce(transform.up * speed*200);
+            body.AddForce(transform.up * speed*75);
         }
-
+        if (Input.GetKeyDown(KeyCode.Mouse0))
+        {
+            body.AddForce(transform.forward * speed);
+        }
 
     }
 }
