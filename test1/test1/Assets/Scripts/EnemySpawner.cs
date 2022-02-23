@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnemySpawner : MonoBehaviour
 {
     public GameObject prefab;
+    public Transform player;
 
     // Start is called before the first frame update
     void Start()
@@ -19,8 +20,9 @@ public class EnemySpawner : MonoBehaviour
             {
                 GameObject Clone = Instantiate(prefab);
                 Clone.transform.position = transform.position;
+                Clone.GetComponent<Enemy>().player = player;
 
-                yield return new WaitForSeconds(3);
+                yield return new WaitForSeconds(6);
             }
 
         }

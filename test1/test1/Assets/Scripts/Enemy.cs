@@ -7,8 +7,9 @@ public class Enemy : MonoBehaviour
 {
     public Transform Head;
     public Transform player;
-    NavMeshAgent    agent;
-    int a=5;
+    NavMeshAgent agent;
+    float DieDist=0;
+    int a=2;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,7 +21,12 @@ public class Enemy : MonoBehaviour
     {
     if(a>0){
         agent.destination=player.position;
+        if(Vector3.Distance(player.position,transform.position)<1)
+        {
+            player.gameObject.GetComponent<PlayerBodyMove>().Alive=false;
+        }
     }
+    
     
         
     }

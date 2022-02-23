@@ -6,6 +6,7 @@ public class PlayerBodyMove : MonoBehaviour
 {
     public float speed=1;
     Rigidbody body;
+    public bool Alive = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,7 +16,8 @@ public class PlayerBodyMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if(Alive)
+        {
         if (Input.GetKey(KeyCode.W))
         {
             body.AddForce(transform.forward * speed);
@@ -40,6 +42,6 @@ public class PlayerBodyMove : MonoBehaviour
         {
             body.AddForce(transform.forward * speed);
         }
-
+        }
     }
 }
