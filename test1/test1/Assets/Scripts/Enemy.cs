@@ -19,16 +19,16 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-    if(a>0){
-        agent.destination=player.position;
-        if(Vector3.Distance(player.position,transform.position)<1)
+    if(a>0)
         {
-            player.gameObject.GetComponent<PlayerBodyMove>().Alive=false;
-        }
-    }
+            agent.destination=player.position;
+            if(Vector3.Distance(player.position,transform.position)<1)
+            {
     
-    
-        
+            player.gameObject.GetComponent<PlayerBodyMove>().Die();
+            }        
+        }   
+
     }
     
     public void Die()
