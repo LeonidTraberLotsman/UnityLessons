@@ -25,7 +25,7 @@ public class Enemy : MonoBehaviour
             if(Vector3.Distance(player.position,transform.position)<1)
             {
     
-            player.gameObject.GetComponent<PlayerBodyMove>().Die();
+            player.gameObject.GetComponent<PlayerBodyMove>().GetDamage(5f);
             }        
         }   
 
@@ -47,6 +47,7 @@ public class Enemy : MonoBehaviour
         {
             Die();
         }
+        
         
 
 

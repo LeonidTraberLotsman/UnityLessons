@@ -7,8 +7,10 @@ public class PlayerBodyMove : MonoBehaviour
 {
     public float speed=1;
     public Text GameOverText;
+    public Text HPindicator;
     public GameObject Aim;  
     public GameObject RestartButton;  
+    public float HP=100;
     
     Rigidbody body;
     public bool Alive = true;
@@ -17,6 +19,14 @@ public class PlayerBodyMove : MonoBehaviour
     {
         body = GetComponent<Rigidbody>();
     }
+public void GetDamage(float damage){
+    HP=HP-damage;
+    if(HP<0){
+        Die();
+    }
+    HPindicator.text=HP.ToString();
+
+}
 public void Die()
 {
     Alive=false;
