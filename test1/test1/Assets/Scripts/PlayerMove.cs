@@ -7,10 +7,14 @@ public class PlayerMove : MonoBehaviour
     public Transform PlayerBody;
     float MouseSensivity = 10;
     float xRotation = 0;
+    public AudioSource source;
+    public AudioClip[] sounds;
+
+
     // gg
     void Start()
     {
-        
+        Cursor.lockState=CursorLockMode.Locked;
     }
 
     // chto zdes proishodit
@@ -26,11 +30,16 @@ public class PlayerMove : MonoBehaviour
         RaycastHit hit;
         if(Physics.Raycast(transform.position, transform.forward, out hit))
         {
+            
             Debug.Log(hit.transform.name);
             if (Input.GetKeyDown(KeyCode.Mouse0))
             {
+                source.clip=sounds[0];
+                source.Play();
                 if(hit.transform.gameObject.GetComponent<Enemy>()){
-                     hit.transform.gameObject.GetComponent<Enemy>().damage();
+                    source.clip=sounds[1];
+                    source.Play();
+                    hit.transform.gameObject.GetComponent<Enemy>().damage();
                 }
             }
         }

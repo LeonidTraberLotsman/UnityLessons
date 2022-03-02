@@ -11,6 +11,7 @@ public class PlayerBodyMove : MonoBehaviour
     public GameObject Aim;  
     public GameObject RestartButton;  
     public float HP=100;
+   
     
     Rigidbody body;
     public bool Alive = true;
@@ -41,6 +42,8 @@ public void Die()
         {
         if (Input.GetKey(KeyCode.W))
         {
+            
+            //source.Play();
             body.AddForce(transform.forward * speed);
         }
         if (Input.GetKey(KeyCode.S))
