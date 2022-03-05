@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerMove : MonoBehaviour
 {
@@ -9,14 +10,17 @@ public class PlayerMove : MonoBehaviour
     float xRotation = 0;
     public AudioSource source;
     public AudioClip[] sounds;
-
+    public int Ammo;
+    public Text AmmoCount;
 
     // gg
     void Start()
     {
         Cursor.lockState=CursorLockMode.Locked;
-    }
+        AmmoCount.text=Ammo.ToString();
 
+    }
+    
     // chto zdes proishodit
     void Update()
     {
@@ -32,13 +36,16 @@ public class PlayerMove : MonoBehaviour
         {
             
             Debug.Log(hit.transform.name);
-            if (Input.GetKeyDown(KeyCode.Mouse0))
+            if ((Input.GetKeyDown(KeyCode.Mouse0))&&(Ammo>0))
             {
+                Ammo=Ammo-1;
+                AmmoCount.text=Ammo.ToString();
                 source.clip=sounds[0];
                 source.Play();
                 if(hit.transform.gameObject.GetComponent<Enemy>()){
                     source.clip=sounds[1];
                     source.Play();
+                    
                     hit.transform.gameObject.GetComponent<Enemy>().damage();
                 }
             }
