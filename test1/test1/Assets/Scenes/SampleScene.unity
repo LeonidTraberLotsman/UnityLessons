@@ -237,7 +237,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a23f20260d3619944816e5277de7c624, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 3
   GameOverText: {fileID: 977763467}
   HPindicator: {fileID: 281887439}
   Aim: {fileID: 1565689649}
@@ -2069,6 +2069,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9c358b6b47ed264aa68fd3958c751d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PS: {fileID: 454885075184943931, guid: 9325c10e32abf7c45a2a5eec8f9e74ac, type: 3}
 --- !u!54 &2004173118
 Rigidbody:
   m_ObjectHideFlags: 0
