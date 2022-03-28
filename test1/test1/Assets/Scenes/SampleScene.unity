@@ -235,12 +235,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a23f20260d3619944816e5277de7c624, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 15
+  speed: 10
   GameOverText: {fileID: 977763467}
   HPindicator: {fileID: 281887439}
   Aim: {fileID: 1565689649}
   RestartButton: {fileID: 1598937504}
-  HP: 100
+  HP: 10000
   Alive: 1
 --- !u!54 &56831664
 Rigidbody:
@@ -779,6 +779,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 6386573768737098263, guid: 38fcd0ca2c241624ba34e8ec89363d6a, type: 3}
   player: {fileID: 56831662}
+  manager: {fileID: 1715256918}
 --- !u!4 &913130701
 Transform:
   m_ObjectHideFlags: 0
@@ -1820,6 +1821,50 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &1715256917
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1715256919}
+  - component: {fileID: 1715256918}
+  m_Layer: 0
+  m_Name: manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1715256918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1715256917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79386a88576003e40b081e216db51edb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemies: []
+--- !u!4 &1715256919
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1715256917}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -35.534805, y: -12.9, z: -49.8}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1744610133
 GameObject:
   m_ObjectHideFlags: 0
@@ -2002,7 +2047,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Ammo 100
+  m_Text: Ammo 10000
 --- !u!222 &1869256424
 CanvasRenderer:
   m_ObjectHideFlags: 0
