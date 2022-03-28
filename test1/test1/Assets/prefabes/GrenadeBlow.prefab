@@ -1,6 +1,10 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+<<<<<<< HEAD
 --- !u!1 &3357448880568610154
+=======
+--- !u!1 &454885075184943931
+>>>>>>> 9e7d8a8144df3ee75f654b045c903c5bd4e9dd23
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,9 +12,15 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+<<<<<<< HEAD
   - component: {fileID: 1335556554287291965}
   - component: {fileID: 4982204979644241083}
   - component: {fileID: 7886064778110519623}
+=======
+  - component: {fileID: 454885075184943934}
+  - component: {fileID: 454885075184943933}
+  - component: {fileID: 454885075184943932}
+>>>>>>> 9e7d8a8144df3ee75f654b045c903c5bd4e9dd23
   m_Layer: 0
   m_Name: GrenadeBlow
   m_TagString: Untagged
@@ -18,40 +28,70 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+<<<<<<< HEAD
 --- !u!4 &1335556554287291965
+=======
+--- !u!4 &454885075184943934
+>>>>>>> 9e7d8a8144df3ee75f654b045c903c5bd4e9dd23
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 3357448880568610154}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 4, y: 2.735, z: -9.852955}
   m_LocalScale: {x: 1, y: 1, z: 1}
+=======
+  m_GameObject: {fileID: 454885075184943931}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 2.8825853, y: 35.09733, z: -17.179916}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+>>>>>>> 9e7d8a8144df3ee75f654b045c903c5bd4e9dd23
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+<<<<<<< HEAD
 --- !u!198 &4982204979644241083
+=======
+--- !u!198 &454885075184943933
+>>>>>>> 9e7d8a8144df3ee75f654b045c903c5bd4e9dd23
 ParticleSystem:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 3357448880568610154}
   serializedVersion: 7
   lengthInSec: 4.9
   simulationSpeed: 5.29
+=======
+  m_GameObject: {fileID: 454885075184943931}
+  serializedVersion: 8
+  lengthInSec: 12.1
+  simulationSpeed: 4
+>>>>>>> 9e7d8a8144df3ee75f654b045c903c5bd4e9dd23
   stopAction: 0
   cullingMode: 0
   ringBufferMode: 0
   ringBufferLoopRange: {x: 0, y: 1}
+<<<<<<< HEAD
+=======
+  emitterVelocityMode: 1
+>>>>>>> 9e7d8a8144df3ee75f654b045c903c5bd4e9dd23
   looping: 0
   prewarm: 0
   playOnAwake: 1
   useUnscaledTime: 0
   autoRandomSeed: 1
+<<<<<<< HEAD
   useRigidbodyForVelocity: 1
+=======
+>>>>>>> 9e7d8a8144df3ee75f654b045c903c5bd4e9dd23
   startDelay:
     serializedVersion: 2
     minMaxState: 0
@@ -115,7 +155,11 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
+<<<<<<< HEAD
       scalar: 5
+=======
+      scalar: 12
+>>>>>>> 9e7d8a8144df3ee75f654b045c903c5bd4e9dd23
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -168,7 +212,11 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
+<<<<<<< HEAD
       scalar: 3.36
+=======
+      scalar: 2.73
+>>>>>>> 9e7d8a8144df3ee75f654b045c903c5bd4e9dd23
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -284,7 +332,11 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
+<<<<<<< HEAD
       scalar: 18.66
+=======
+      scalar: 35.26
+>>>>>>> 9e7d8a8144df3ee75f654b045c903c5bd4e9dd23
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -600,7 +652,12 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     randomizeRotationDirection: 0
+<<<<<<< HEAD
     maxNumParticles: 600
+=======
+    maxNumParticles: 8204
+    customEmitterVelocity: {x: 0, y: 0, z: 0}
+>>>>>>> 9e7d8a8144df3ee75f654b045c903c5bd4e9dd23
     size3D: 0
     rotation3D: 0
     gravityModifier:
@@ -1303,6 +1360,7 @@ ParticleSystem:
       maxColor: {r: 1, g: 1, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
+<<<<<<< HEAD
         key0: {r: 1, g: 0.07843137, b: 0.09278649, a: 1}
         key1: {r: 0.764151, g: 0.65722793, b: 0.13264506, a: 1}
         key2: {r: 0.07150006, g: 0.061495483, b: 0.012411326, a: 0}
@@ -1315,20 +1373,46 @@ ParticleSystem:
         ctime1: 32575
         ctime2: 40092
         ctime3: 65535
+=======
+        key0: {r: 1, g: 0, b: 0, a: 1}
+        key1: {r: 0.8169976, g: 0.8207547, b: 0.22764327, a: 1}
+        key2: {r: 0, g: 0, b: 0, a: 1}
+        key3: {r: 0, g: 0, b: 0, a: 1}
+        key4: {r: 0, g: 0, b: 0, a: 1}
+        key5: {r: 0, g: 0, b: 0, a: 0}
+        key6: {r: 0, g: 0, b: 0, a: 0}
+        key7: {r: 0, g: 0, b: 0, a: 0}
+        ctime0: 8096
+        ctime1: 17348
+        ctime2: 51850
+        ctime3: 0
+>>>>>>> 9e7d8a8144df3ee75f654b045c903c5bd4e9dd23
         ctime4: 0
         ctime5: 0
         ctime6: 0
         ctime7: 0
+<<<<<<< HEAD
         atime0: 0
         atime1: 33924
         atime2: 0
         atime3: 0
         atime4: 0
+=======
+        atime0: 20432
+        atime1: 51850
+        atime2: 65535
+        atime3: 65535
+        atime4: 65535
+>>>>>>> 9e7d8a8144df3ee75f654b045c903c5bd4e9dd23
         atime5: 0
         atime6: 0
         atime7: 0
         m_Mode: 0
+<<<<<<< HEAD
         m_NumColorKeys: 4
+=======
+        m_NumColorKeys: 3
+>>>>>>> 9e7d8a8144df3ee75f654b045c903c5bd4e9dd23
         m_NumAlphaKeys: 2
       minGradient:
         serializedVersion: 2
@@ -4738,18 +4822,30 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+<<<<<<< HEAD
 --- !u!199 &7886064778110519623
+=======
+--- !u!199 &454885075184943932
+>>>>>>> 9e7d8a8144df3ee75f654b045c903c5bd4e9dd23
 ParticleSystemRenderer:
   serializedVersion: 6
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 3357448880568610154}
+=======
+  m_GameObject: {fileID: 454885075184943931}
+>>>>>>> 9e7d8a8144df3ee75f654b045c903c5bd4e9dd23
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+<<<<<<< HEAD
+=======
+  m_StaticShadowCaster: 0
+>>>>>>> 9e7d8a8144df3ee75f654b045c903c5bd4e9dd23
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
@@ -4780,6 +4876,10 @@ ParticleSystemRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_RenderMode: 0
+<<<<<<< HEAD
+=======
+  m_MeshDistribution: 0
+>>>>>>> 9e7d8a8144df3ee75f654b045c903c5bd4e9dd23
   m_SortMode: 0
   m_MinParticleSize: 0
   m_MaxParticleSize: 0.5
@@ -4803,4 +4903,11 @@ ParticleSystemRenderer:
   m_Mesh1: {fileID: 0}
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
+<<<<<<< HEAD
+=======
+  m_MeshWeighting: 1
+  m_MeshWeighting1: 1
+  m_MeshWeighting2: 1
+  m_MeshWeighting3: 1
+>>>>>>> 9e7d8a8144df3ee75f654b045c903c5bd4e9dd23
   m_MaskInteraction: 0
