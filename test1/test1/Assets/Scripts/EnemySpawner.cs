@@ -6,7 +6,7 @@ public class EnemySpawner : MonoBehaviour
 {
     public GameObject prefab;
     public Transform player;
-    public Enemymanandger manager;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +21,7 @@ public class EnemySpawner : MonoBehaviour
                 GameObject Clone = Instantiate(prefab);
                 Clone.transform.position = transform.position;
                 Clone.GetComponent<Enemy>().player = player;
-                manager.enemies.Add(Clone.GetComponent<Enemy>());
+
                 yield return new WaitForSeconds(6);
             }
 
